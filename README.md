@@ -5,7 +5,7 @@
 ## :hammer:Funcionalidades del proyecto
 Este proyecto exhibe la implementación de una aplicación web utilizando Flask. Su propósito principal es llevar a cabo traducciones a inglés, francés o alemán de textos en cualquier idioma, haciendo uso de los servicios cognitivos de Azure.
 
-- `Funcionalidad 1`: Detecta el idioma del texto 1- `Funcionalidad 2`: Traduce texto 2
+- `Funcionalidad 1`: Detecta el idioma del texto 1- `Funcionalidad 2`: Traduce texto 2-
 
 
 
