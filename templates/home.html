@@ -2,12 +2,36 @@
 <html>
 <head>
     <title>Traductor</title>
+    <style>
+        body {
+            background-color: #333;
+            color: #5faed3;
+            padding: 20px;
+            text-align: center;
+            font-family: Lucida Bright, sans-serif;
+        }
+        
+      </style>
+
+    <style>
+        h2 {
+            font-size: 24px;
+            color: #4496e2;
+            text-decoration: underline;
+        }
+  </style>
 </head>
 <body>
     
-    <h1>Traductor simple</h1>
+    <h1>Traductor Velandia</h1>
+    
     <form method="POST">
-        <input type="text" name="text" placeholder="Introduce el texto aquí" required>
+
+        <!--<input type="text" name="text" style="width: 400px; height: 200px;" placeholder="Introduce el texto que deseas traducir" cols="20" rows="10" oninput="autoLineBreak()" required>
+        -->
+        <textarea name="text" placeholder="Introduce el texto que deseas traducir" cols="40" rows="10" 
+        required></textarea>
+
         <select name="language">
             <option value="en">Inglés</option>
             <option value="es">Español</option>
@@ -20,7 +44,9 @@
 
     {% if translated_text %}
     <h2>Texto traducido:</h2>
-    <p>{{ translated_text }}</p>
+    <textarea name="translate" cols="40" rows="20" 
+    class="form-control"> {{ translated_text }}</textarea>
+    <!--<p>{{ translated_text }}</p>-->
     {% endif %}
 
     {% if lang_detected %}
@@ -29,3 +55,4 @@
     {% endif %}
 </body>
 </html>
+
