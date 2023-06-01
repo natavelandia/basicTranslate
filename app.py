@@ -23,9 +23,9 @@ def home():
         source_language = ''
         translated_text = text
 
-        return render_template('home.html', translated_text=translated_text,lang_detected=source_language)
+        return render_template('index.html', translated_text=translated_text,lang_detected=source_language)
     
-    return render_template('home.html')
+    return render_template('index.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
